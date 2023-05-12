@@ -9,15 +9,39 @@
 </head>
 
 <body>
-    <h1> Registration </h1>
+    <h1> Race registration </h1>
     <form action="/registerd">
         <p>
-            <lable for="username">username</lable>
-            <input id="username" type="text" placeholder="Username" required>
+            <lable for="Firstname">First name</lable>
+            <input name="Firstname" id="Firstname" type="text" placeholder="name" required>
+
+            <lable for="lastname">Last name</lable>
+            <input name="lastname" id="lastname" type="text" placeholder="lastname" required>
         </p>
         <p>
+        <h4>Select a choice: </h4>
+        <input id="5k" type="radio" name="choice" value=" fun 5k">
+        <lable for="5k">Fun run 5k</lable><br>
+        <input id="Half Marathon" type="radio" name="choice" value="Half Marathon">
+        <lable for="Half Marathon">Half Marathon</lable><br>
+        <input id="Full Marathon" type="radio" name="choice" value=" Full Marathon">
+        <lable for="Full Marathon">Full Marathon</lable><br>
+        </p>
+        <p>
+            <lable for="email">Email</lable>
+            <input name="email" id="email" type="email" required>
+
             <lable for="Password">Password</lable>
-            <input id="Password" type="text" placeholder="Password" minlength="6" required>
+            <input name="Password" id="Password" type="password" placeholder="Password" minlength="6" required>
+        </p>
+        <lable for="age">Select age group</lable>
+        <select id="age" name="age">
+            <option value="under 18"> under 18</option>
+            <option value="18 - 30">18-30</option>
+            <option value="30+"> 30+</option>
+        </select>
+        <p>
+
         </p>
         <button>Register</button>
     </form>
