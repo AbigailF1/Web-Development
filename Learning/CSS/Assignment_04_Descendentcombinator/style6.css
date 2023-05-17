@@ -1,0 +1,10 @@
+header a {
+    font-size: 30px;
+    color: teal;
+
+}
+
+#dislike a {
+    font-weight: bold;
+    color: red;
+}
